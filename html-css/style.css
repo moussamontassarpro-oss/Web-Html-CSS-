@@ -54,7 +54,14 @@ body{
 .logo:hover{
     transform: scale(1);
 }
-.fa-solid{
+.conteneur-recherche{
+    position: relative;
+    display: inline-block;
+}
+.conteneur-recherche .fa-solid {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
     color: #FFFFFF;
-    margin-right: 50px;
 }
