@@ -1,67 +1,229 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
 }
-body{
+
+body {
     font-family: "Montserrat";
 }
 
-.parrent-nav-top{
-    height: 80px;
+.parrent-nav-top {
+    height: 5rem; 
     background-color: #152237;
     display: flex;
     align-items: center;  
-    justify-content: space-between;  
-    padding: 0 98px; 
+    justify-content: space-between;
+    padding: 0 6.125rem; 
+    position: relative;
+    font-size: 0.9375rem;
 }
-.parrent-nav-top img{
-    width: 84px;
-    height: 31px;
+
+.parrent-nav-top img {
+    width: 5.25rem; 
+    height: 1.9375rem;
 }
+
+.gauche-container {
+    display: flex;
+    align-items: center;
+    gap: 9.375rem; 
+    flex-shrink: 0; 
+}
+
+.formation-link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .nav-list {
     display: flex;
     list-style: none;  
-    gap: 20px
+    gap: 1.25rem;
+    
 }
-.formation-link{
-    text-decoration: none;
-    color: #FFFFFF;
-}
+
 .nav-list a {
     text-decoration: none;
     color: #152237;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 0.625rem; 
+    padding: 0.9375rem;
 }
-.nav-list .color-connect{
+
+.nav-list .color-connect {
     background: #FFFFFF;
 }
-.nav-list .color-sign{
-    background:  linear-gradient(0.25turn,#44DD8A, #15B7E2); ;
+
+.nav-list .color-sign {
+    background: linear-gradient(0.25turn, #44DD8A, #15B7E2); 
 }
-.recherche-top{
-    width: 477px;
-    height: 40px;
+
+.recherche-top {
+    width: 29.8125rem; 
+    height: 2.5rem; 
     background-color: transparent;
-    border-radius: 6px;
+    border-radius: 0.375rem;
     border: 1px solid #ffffff;
 }
-.recherche-top::placeholder{
+
+.recherche-top::placeholder {
     color: #FFFFFF;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 }
-.logo:hover{
+
+.logo:hover {
     transform: scale(1);
 }
-.conteneur-recherche{
-    position: relative;
+
+.conteneur-recherche {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: inline-block;
+    width: 29.8125rem;
 }
+
 .conteneur-recherche .fa-solid {
     position: absolute;
-    right: 15px;
+    right: 0.9375rem; 
     top: 50%;
     transform: translateY(-50%);
     color: #FFFFFF;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0.25turn, #44DD8A, #15B7E2);
+    opacity: 0.8;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-image-style {
+    width: 100%;
+    display: block;
+}
+
+.in-hero {
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+}
+.in-hero h1{
+    font-size: 3rem;
+    white-space: pre;
+    margin-bottom: 0.625rem;
+    color: #152237;
+}
+.in-hero p{
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+    color: #000000;
+}
+
+.button-hero {
+    border-radius: 0.3125rem; 
+    border: 1px solid #ffffff;
+    padding: 0.625rem 1.25rem; 
+    background: #FFFFFF;
+    cursor: grab;
+    color: #152237;
+}
+
+.main-formations {
+   display: grid; 
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   gap: 40px;
+   padding: 0 100px;
+   margin-top: 2rem;
+}
+
+
+
+.main-formations img {
+    width: 19.063rem;
+    height: 12.875rem;
+    display: block;
+}
+.img-container {
+    position: relative;
+    width: fit-content;
+}
+
+
+.prix {
+    position: absolute;
+    bottom: -13px;  
+    right: 10px;   
+    background-color: #152237;
+    border-radius: 1rem; 
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    color: #FFFFFF !important;
+}
+
+
+.title-formation h1 {
+    font-size: 2.25rem;
+    margin-left: 6.063rem;
+    margin-top: 2rem;
+    color: #152237;
+}
+
+.main-formations h4 {
+    color: #152237;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-left: 15px;
+    white-space: pre;
+}
+
+.prix p{
+    font-size: 16px;
+}
+
+.mini-60 {
+    font-size: 10px;
+    vertical-align: 2.5px;
+    color: #FFFFFF;
+}
+
+.formation-img p{
+    margin-top: 10px;
+    color: #152237 ;
+    margin-left: 15px;
+    
+    
+}
+
+.cinq-etoile{
+    
+    color: #FFC700;
+   
+}
+
+
+
+.cinq-etoile-main{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.quatre-etoile-main{
+    margin-top: 10px;
+    margin-left: 15px;
+    color: color-mix(in srgb, #FFC700 30%, #FFFFFF 70%);
 }
