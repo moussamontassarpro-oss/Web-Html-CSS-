@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: "Montserrat";
     cursor: url(/html-css/assets/ressources/cursor.svg), auto;
+    overflow-x: hidden;
 }
 
 .parrent-nav-top {
@@ -739,6 +741,10 @@ footer {
 }
 
 @media (max-width: 24.5625rem) {
+
+   .body{
+    overflow-x: hidden;
+   } 
   .formation-link, .conteneur-recherche, .nav-list{
     display: none;
   }
@@ -766,7 +772,7 @@ footer {
   }
   
   .in-hero {
-    width: 24.5625rem;
+    width: 100%;
     height: 22.75rem;
   }
 
@@ -808,6 +814,7 @@ footer {
     width: 100%; 
     max-width: 20.9375rem; 
     margin: 0 auto; 
+    margin-top: -35px;
   }
   
   .main-formations{
@@ -834,7 +841,7 @@ footer {
   
   .baground-color-recent{
     height: 120.4375rem;
-    width: 24.5625rem;
+    width: 100%;
   }
   
   .main-formations-recent{
@@ -875,7 +882,7 @@ footer {
   }
   
   .avantage-klivo{
-    width: 24.5625rem;
+    width: 100%;
     height: 56.25rem;
     display: flex;
     flex-direction: column;
@@ -902,7 +909,7 @@ footer {
 
   .formation{
     height: 75rem;
-    width: 24.5625rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -942,7 +949,7 @@ footer {
   
   .apropos{
     height: 64.8125rem;
-    width: 24.5625rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -975,7 +982,7 @@ footer {
   }
   
   .droite-content-apropos{
-    width: 24.5625rem;
+    width: 100%;
     height: 23.125rem;
   }
   
@@ -1059,7 +1066,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 24.5625rem;
+    width: 100%;
     height: 33.6875rem;
     margin: 0 auto;
     text-align: center;
@@ -1091,5 +1098,8 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 0.625rem;
+  }
+  .formation-img-recent{
+    margin-top: 35px;
   }
 }
